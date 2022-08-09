@@ -1,0 +1,55 @@
+- url: mathGame?highestValue=1
+  category: Addition
+  name: Math Practice (Highest Number = 1)
+
+- url: mathGame?highestValue=1
+  category: Addition
+  name: Math Practice (Highest Number = 2)
+
+- url: multiplicationFactors?factorValue=1
+  category: Multiplication
+  name: Times Table Practice Using Value of 1
+
+- url: multiplicationFactors?factorValue=2
+  category: Multiplication
+  name: Times Table Practice Using Value of 2
+
+- url: multiplicationFactors?factorValue=3
+  category: Multiplication
+  name: Times Table Practice Using Value of 3
+
+- url: multiplicationFactors?factorValue=4
+  category: Multiplication
+  name: Times Table Practice Using Value of 4
+
+- url: multiplicationFactors?factorValue=5
+  category: Multiplication
+  name: Times Table Practice Using Value of 5
+
+- url: multiplicationFactors?factorValue=6
+  category: Multiplication
+  name: Times Table Practice Using Value of 6 
+
+- url: multiplicationFactors?factorValue=7
+  category: Multiplication
+  name: Times Table Practice Using Value of 7
+
+- url: multiplicationFactors?factorValue=8
+  category: Multiplication
+  name: Times Table Practice Using Value of 8
+
+- url: multiplicationFactors?factorValue=9
+  category: Multiplication
+  name: Times Table Practice Using Value of 9
+
+- url: multiplicationFactors?factorValue=10
+  category: Multiplication
+  name: Times Table Practice Using Value of 10
+
+- url: multiplicationFactors?factorValue=11
+  category: Multiplication
+  name: Times Table Practice Using Value of 11
+
+- url: multiplicationFactors?factorValue=12
+  category: Multiplication
+  name: Times Table Practice Using Value of 12
