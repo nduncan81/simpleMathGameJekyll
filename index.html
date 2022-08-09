@@ -1,13 +1,54 @@
 ---
-layout: default
-title: Architect Theme by Jason Long
+layout: twoColumn
+title: Simple Math Games and Practice 
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+  <h1>Welcome to Simple Math Games</h1>
+  <h2>Choose a practice game below to begin playing!!!!</h2>
+  <table>
+    <tr>
+      <td valign="top">
+        <table>
+          <tr>
+            <td style="font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+            font-size: 22px;
+            font-weight: bold;
+            color: #474747;">Addition Games</td>
+          </tr>
+          {% for link in site.data.rightSideLinks %}
+          {% if link.category == 'Addition' %}
+          <tr>
+            <td><span style="font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+              font-size: 18px;
+              font-weight: bold;"><a href="{{ link.url }}">{{ link.name }}</a></span></td>
+          </tr>  
+          {% endif %}
+          {% endfor %}
+        </table>
+      </td>
+      <td valign="top">
+        <table>
+          <tr>
+            <td style="font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+            font-size: 22px;
+            font-weight: bold;
+            color: #474747;">Multiplication Games</th>
+          </tr>
+          {% for link in site.data.rightSideLinks %}
+          {% if link.category == 'Multiplication' %}
+          <tr>
+            <td><span style="font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+              font-size: 18px;
+              font-weight: bold;"><a href="{{ link.url }}">{{ link.name }}</a></span></td>
+          </tr>  
+          {% endif %}
+          {% endfor %}
+        </table>
+      </td>
+    </tr>
+   
+     
+  </table>
+
 </div>

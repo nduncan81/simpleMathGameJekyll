@@ -493,6 +493,11 @@ header h2 {
   width: 590px;
 }
 
+#main-content-full {
+  float: left;
+  width: 990px;
+}
+
 #main-content img {
   max-width: 100%;
 }

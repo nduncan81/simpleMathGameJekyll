@@ -1,10 +1,50 @@
 - url: mathGame?highestValue=1
   category: Addition
-  name: Math Practice (Highest Number = 1)
+  name: Ranges From 0 - 1
 
-- url: mathGame?highestValue=1
+- url: mathGame?highestValue=2
   category: Addition
-  name: Math Practice (Highest Number = 2)
+  name: Ranges From 0 - 2
+
+- url: mathGame?highestValue=3
+  category: Addition
+  name: Ranges from 0 - 3
+
+- url: mathGame?highestValue=4
+  category: Addition
+  name: Ranges from 0 - 4
+
+- url: mathGame?highestValue=5
+  category: Addition
+  name: Ranges from 0 - 5
+
+- url: mathGame?highestValue=6
+  category: Addition
+  name: Ranges from 0 - 6    
+
+- url: mathGame?highestValue=7
+  category: Addition
+  name: Ranges from 0 - 7
+
+- url: mathGame?highestValue=8
+  category: Addition
+  name: Ranges from 0 - 8
+
+- url: mathGame?highestValue=9
+  category: Addition
+  name: Ranges from 0 - 9   
+
+- url: mathGame?highestValue=10
+  category: Addition
+  name: Ranges from 0 - 10 
+
+- url: mathGame?highestValue=11
+  category: Addition
+  name: Ranges from 0 - 11 
+
+- url: mathGame?highestValue=12
+  category: Addition
+  name: Ranges from 0 - 12 
 
 - url: multiplicationFactors?factorValue=1
   category: Multiplication
