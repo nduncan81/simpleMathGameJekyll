@@ -1,7 +1,7 @@
 # Setup
 name:         Simple Math Practice
 tagline:      A simple fun way to learn math for kids.
-baseurl:      "/simpleMathGameJekyll"
+baseurl:      ""
 locale:       "en"
 
 # Gems
