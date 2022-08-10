@@ -40,14 +40,14 @@ title: Multiplcation Factors
       var outputData = "";
       var logData = "";
       if((parseInt(val1) * parseInt(val2)) == parseInt(answer)){
-          outputData = "Thats right " + val1 + " * " + val2 + " = " + answer;
-          logData = "<font color=\"green\">" + val1 + " * " + val2 + " = " + answer + " <b>CORRECT</b></font>";
+          outputData = "Thats right " + val1 + " x " + val2 + " = " + answer;
+          logData = "<font color=\"green\">" + val1 + " x " + val2 + " = " + answer + " <b>CORRECT</b></font>";
           totalQuestionsCorrect += 1;
         
       }else{
           totalQuestionsIncorrect += 1;
-          outputData = "Thats incorrect " + val1 + " * " + val2 + " = " + (parseInt(val1)+parseInt(val2));
-          logData = "<font color=\"red\">" + val1 + " * " + val2 + " = " + answer + " <b>INCORRECT</b></font>";
+          outputData = "Thats incorrect " + val1 + " x " + val2 + " = " + (parseInt(val1)*parseInt(val2));
+          logData = "<font color=\"red\">" + val1 + " x " + val2 + " = " + answer + " <b>INCORRECT</b></font>";
       }
       arrayLog.push(logData);
   
@@ -83,7 +83,7 @@ title: Multiplcation Factors
   <h2>See how many mutliplication questions you can get correct?</h2>
   <div style="font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 22px;
-  font-weight: bold;"><span id="val1"></span> * <span id="val2"></span> = <input type="text" name="answer" id="answer" size="3"></div>
+  font-weight: bold;"><span id="val1"></span> x <span id="val2"></span> = <input type="text" name="answer" id="answer" size="3"></div>
   <br />
   <div><a class="button" href="javascript:checkAnswer();">Submit Answer</a></div>
 
