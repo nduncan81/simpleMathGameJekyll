@@ -48,48 +48,48 @@
 
 - url: multiplicationFactors?factorValue=1
   category: Multiplication
-  name: Times Table Practice Using Value of 1
+  name: Times Table Practice Using 1's
 
 - url: multiplicationFactors?factorValue=2
   category: Multiplication
-  name: Times Table Practice Using Value of 2
+  name: Times Table Practice Using 2's
 
 - url: multiplicationFactors?factorValue=3
   category: Multiplication
-  name: Times Table Practice Using Value of 3
+  name: Times Table Practice Using 3's
 
 - url: multiplicationFactors?factorValue=4
   category: Multiplication
-  name: Times Table Practice Using Value of 4
+  name: Times Table Practice Using 4's
 
 - url: multiplicationFactors?factorValue=5
   category: Multiplication
-  name: Times Table Practice Using Value of 5
+  name: Times Table Practice Using 5's
 
 - url: multiplicationFactors?factorValue=6
   category: Multiplication
-  name: Times Table Practice Using Value of 6 
+  name: Times Table Practice Using 6's 
 
 - url: multiplicationFactors?factorValue=7
   category: Multiplication
-  name: Times Table Practice Using Value of 7
+  name: Times Table Practice Using 7's
 
 - url: multiplicationFactors?factorValue=8
   category: Multiplication
-  name: Times Table Practice Using Value of 8
+  name: Times Table Practice Using 8's
 
 - url: multiplicationFactors?factorValue=9
   category: Multiplication
-  name: Times Table Practice Using Value of 9
+  name: Times Table Practice Using 9's
 
 - url: multiplicationFactors?factorValue=10
   category: Multiplication
-  name: Times Table Practice Using Value of 10
+  name: Times Table Practice Using 10's
 
 - url: multiplicationFactors?factorValue=11
   category: Multiplication
-  name: Times Table Practice Using Value of 11
+  name: Times Table Practice Using 11's
 
 - url: multiplicationFactors?factorValue=12
   category: Multiplication
-  name: Times Table Practice Using Value of 12
+  name: Times Table Practice Using 12's
