@@ -32,13 +32,13 @@ title: Math Practice
   }
   
   function checkAnswer(){
-      totalQuestionsAnswered += 1;
+      
       var val1 = document.getElementById("val1").innerHTML;
       var val2 = document.getElementById("val2").innerHTML;
       var answer = document.getElementById("answer").value;
 
       if (answer != ""){ 
-  
+        totalQuestionsAnswered += 1;
         var outputData = "";
         var logData = "";
         if((parseInt(val1) + parseInt(val2)) == parseInt(answer)){
