@@ -37,32 +37,36 @@ title: Multiplcation Factors
       var val2 = document.getElementById("val2").innerHTML;
       var answer = document.getElementById("answer").value;
   
-      var outputData = "";
-      var logData = "";
-      if((parseInt(val1) * parseInt(val2)) == parseInt(answer)){
+      if(answer != ""){
+        var outputData = "";
+        var logData = "";
+        if((parseInt(val1) * parseInt(val2)) == parseInt(answer)){
           outputData = "Thats right " + val1 + " x " + val2 + " = " + answer;
           logData = "<font color=\"green\">" + val1 + " x " + val2 + " = " + answer + " <b>CORRECT</b></font>";
           totalQuestionsCorrect += 1;
         
-      }else{
+        }else{
           totalQuestionsIncorrect += 1;
           outputData = "Thats incorrect " + val1 + " x " + val2 + " = " + (parseInt(val1)*parseInt(val2));
           logData = "<font color=\"red\">" + val1 + " x " + val2 + " = " + answer + " <b>INCORRECT</b></font>";
+        } 
+        arrayLog.push(logData);
+  
+        var info = "You have answered " + totalQuestionsAnswered + " Question(s)<br><font color=\"green\">You have gotten " + totalQuestionsCorrect + " CORRECT</font><br><font color=\"red\">You have gotten " + totalQuestionsIncorrect + " INCORRECT</font>";
+  
+        document.getElementById("result").innerHTML="<h3>" + outputData + "</h3><h3>" + info + "</h3>";
+  
+        var arrayLogData = "";
+        for(var i = 0; i < arrayLog.length; i++){
+          arrayLogData = "<h3>" + arrayLog[i] + "</h3>" + arrayLogData;
+  
+        }
+        document.getElementById("logData").innerHTML=arrayLogData;
+  
+        document.getElementById("answer").focus();
+        document.getElementById("answer").select();
+        start();
       }
-      arrayLog.push(logData);
-  
-      var info = "You have answered " + totalQuestionsAnswered + " Question(s)<br><font color=\"green\">You have gotten " + totalQuestionsCorrect + " CORRECT</font><br><font color=\"red\">You have gotten " + totalQuestionsIncorrect + " INCORRECT</font>";
-  
-      document.getElementById("result").innerHTML="<h3>" + outputData + "</h3><h3>" + info + "</h3>";
-  
-      var arrayLogData = "";
-      for(var i = 0; i < arrayLog.length; i++){
-        arrayLogData = "<h3>" + arrayLog[i] + "</h3>" + arrayLogData;
-  
-      }
-      document.getElementById("logData").innerHTML=arrayLogData;
-  
-      start();
         
   
   
@@ -75,6 +79,14 @@ title: Multiplcation Factors
   window.addEventListener('load', (event) => {
      init();
   });
+
+
+  function returnKey(event){
+
+    if (event.keyCode === 13) {
+      checkAnswer();
+    }
+  };
   </script>
 
 
@@ -83,7 +95,7 @@ title: Multiplcation Factors
   <h2>See how many mutliplication questions you can get correct?</h2>
   <div style="font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 22px;
-  font-weight: bold;"><span id="val1"></span> x <span id="val2"></span> = <input type="text" name="answer" id="answer" size="3"></div>
+  font-weight: bold;"><span id="val1"></span> x <span id="val2"></span> = <input type="text" name="answer" id="answer" size="3" onkeypress="returnKey(event)"></div>
   <br />
   <div><a class="button" href="javascript:checkAnswer();">Submit Answer</a></div>
 
